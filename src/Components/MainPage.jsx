@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 
 function MainPage() {
     const [value,setValue]= useState('');
-    const [result, setResult] = useState("0");
 
     const evalueExpresion = () => {
         try{
           const evaluar = eval(value)
           setValue(evaluar.toString())
         }catch(error){
-            setResult("error");
+            setValue('syntax error');
         }
       }
     
