@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  background-image: url('./Assets/moso\ 1.jpg');
+  background-position: center;
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calculator-div{
+  width: 500px;
+  height: 680px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .75);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.input-div{
+  font-size: 60px;
+  
+}
+.input-area{
+  background-color: transparent;
+  border: none;
   color: white;
 }
+.buttons{
 
-.App-link {
-  color: #61dafb;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4,6rem);
+  grid-template-rows: minmax(7rem) repeat(5);
 }
+.btn{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.span-1{
+  grid-column: span 2;
+  height: 80px;
+  width: 180px;
+  border-radius: 20px;
+}
+.span-2{
+  grid-column: span 2;
+  height: 80px;
+  width: 180px;
+  border-radius: 20px;
+
 }
