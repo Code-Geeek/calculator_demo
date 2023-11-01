@@ -17,7 +17,7 @@ function MainPage() {
     <div style={{height:'100vh'}} className=' main d-flex justify-content-center align-items-center'>
         <div>
             <div className='calculator-div'>
-                <div className='input-div w-100 mb-3 d-flex align-items-center justify-content-end p-3' style={{height:'120px'}}>
+                <div className='input-div w-100 mb-3 d-flex align-items-center justify-content-end p-3'>
                     <input className='input-area' type="text" value={value}/>
                 </div>
                 
